@@ -1,0 +1,51 @@
+#how to install the LAMP Stack on Ubuntu 18.04.
+
+1#Install Apache
+sudo apt-get install apache2
+
+#status active running
+sudo service apache2 status
+
+#UFW firewall 
+sudo ufw app list
+
+#apache full *ports 80 and 443.
+sudo ufw app info “Apache Full”
+
+2#Install MySQL and Create a Database
+sudo apt-get install mysql-server
+
+3#Install PHP
+sudo apt-get install php libapache2-mod-php php-mysql
+
+#To change this, open the dir.conf file in a text editor with root privileges  {index.html - index.php}
+sudo nano /etc/apache2/mods-enabled/dir.conf
+
+5#Restart Apache
+sudo systemctl restart apache2
+
+
+*optional Install PHP Modules
+
+1. apt-cache search php- | less
+2. apt-cache show php-cli
+ - sudo apt-get install php-cli
+
+6#Test PHP Processing on Web Server
+#Create a basic PHP script
+sudo nano /var/www/html/info.php
++++++++++++
+
+<?php
+phpinfo ();
+?>
+
++++++++++++
+*brouser
+http://127.0.0.1/info.php
+
+#sukses
+
+
+
+
