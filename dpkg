@@ -1,0 +1,22 @@
+dpkg
+Sistem distribusi Linux berbasis Debian, umumnya menangani paket dengan ekstensi
+.deb. Ini adalah paket Debian, dan baris perintah dpkg menawarkan utilitas bawaan
+untuk menangani paket jenis ini.
+dpkg bekerja sepenuhnya melalui parameter baris perintah, yang bisa terdiri dari satu
+tindakan, dengan nol opsi atau lebih. Parameter tindakan memberi tahu dpkg apa yang
+harus dilakukan dan opsi mengontrol perilaku tindakan dalam beberapa cara.
+Sintaks perintah dpkg bisa dinyatakan dalam bentuk :
+
+dpkg TINDAKAN
+atau
+dpkg [opsi] TINDAKAN
+Misalnya untuk mendaftar seluruh paket yang terinstal di sistem, saya bisa menjalankan
+perintah :
+# dpkg -l
+Untuk menginstal berkas paket dengan ekstensi .deb, gunakan perintah :
+# dpkg -i namaberkas.deb
+Untuk menghapus berkas paket .deb yang sudah terinstal, gunakan perintah :
+# dpkg -r namaberkas.deb
+Untuk mendaftar isi paket di berkas paket .deb, gunakan perintah :
+# dpkg --contents namaberkas.deb
+dan masih banyak lagi penggunaan dpkg lainnya.
