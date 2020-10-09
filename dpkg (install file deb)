@@ -20,3 +20,9 @@ Untuk menghapus berkas paket .deb yang sudah terinstal, gunakan perintah :
 Untuk mendaftar isi paket di berkas paket .deb, gunakan perintah :
 # dpkg --contents namaberkas.deb
 dan masih banyak lagi penggunaan dpkg lainnya.
+
+
+untuk file deb cara install/ubuntu
+
+sudo dpkg -i namaplikasi_amd64.deb
+sudo apt-get install -f
