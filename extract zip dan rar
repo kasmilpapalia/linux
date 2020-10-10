@@ -1,0 +1,8 @@
+
+*cara extract file zip dan rar
+
+#unrar x nama_file.rar
+#unzip x nama_file.zip
+
+seandainya perintah di atas tidak bisa itu berarti tidak ada program unzip dan unrar cara menginstall dengan mengetikan perintah 
+#sudo apt-get install unzip && unrar
