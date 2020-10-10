@@ -1,0 +1,8 @@
+untuk menghapus aplikasi bisa langsung menggunakan
+#sudo apt-get --purge remove nama_aplikasi
+
+seandainya tidak jadi lihat dulu nama aplikasinya
+#sudo dpkg --list
+setelah dapat nama aplikasinya langsung eksekusi contoh
+
+#sudo apt-get --purge remove dropbox
