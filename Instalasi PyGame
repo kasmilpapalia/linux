@@ -1,0 +1,17 @@
+*option 1
+PyGame dapat kita install menggunakan pip dengan perintah berikut:
+#sudo pip install pygame
+
+Atau bisa juga melalui apt:
+#sudo apt-get install python3-pygame
+
+#option 2
+# membuat virtual env
+virtualenv -p python3 pygame
+# pindah ke direktori virtualenv
+cd pygmae
+# aktifkan virtual env
+. bin/activate
+# install modul pygame di dalam virtualenv
+pip install pygame
+
