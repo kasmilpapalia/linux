@@ -1,0 +1,34 @@
+1. Buka terminal dan arahkan ke Directory download dengan cara ketik
+
+( cd ~/Downloads )
+
+2. Kita download file create_ap dengan perintah berikut
+
+( git clone https://github.com/oblique/create_ap )
+
+3. Setelah selesai mendownload kita masuk ke direktory create_ap dengan cara, ketik perintah berikut,
+
+( cd create_ap )
+
+4. Setelah itu ketik perintah berikut di terminal,
+
+( sudo make install )
+
+5. Untuk membuat hotspot menggunakan koneksi wifi, kita bisa menggunakan perintah berikut,
+
+( sudo create_ap wlp2s0 wlp2s0 Gramit wilcard123 )
+
+#Jika kalian mendapatkan masalah yang ada kata-kata "Hostapd" seperti berikut: 
+( ERROR: hostapd not found. )
+
+( sudo apt-get install hostapd )
+
+lalu kalian ketik ulang perintah awal pada step ke 5.
+
+6. Setelah selesai set-up kalian biarkan saja terminal terus berjalan, dan untuk mematikannya klik CTRL+C dan hotspot/akses point akan mati. Untuk menghidupkannya lagi silahkan ulangi langkah ke 5.
+
+7. Atau jika terminal tak sengaja tertutup oleh kalian, ketikan saja perintah berikut di terminal,
+
+( ./create_ap --fix-unmanaged )
+
+8. selesai
